@@ -1,0 +1,44 @@
+2024-03-15 07:53:43,915 DEBUG [main] (ProcessFactory.java:122) - Creating object, className=com.brd.system.reader.VaultDBReader
+2024-03-15 07:53:43,929 DEBUG [main] (ProcessFactory.java:122) - Creating object, className=com.brd.system.writer.MQWriter
+2024-03-15 07:53:43,940 INFO  [main] (SystemProcessor.java:176) - Parser is not configured, may be not in use.
+2024-03-15 07:53:43,942 DEBUG [Thread-2] (  Writer.java:110) - Writer : Waiting for record...
+2024-03-15 07:53:47,918 INFO  [Thread-1] (VaultDBReader.java:234) - load data
+2024-03-15 07:53:47,956 INFO  [Thread-1] (VaultDBReader.java:267) - MQ messages exist in DB
+2024-03-15 07:53:47,957 INFO  [Thread-1] (VaultDBReader.java:267) - MQ messages exist in DB
+2024-03-15 07:53:47,957 INFO  [Thread-1] (VaultDBReader.java:532) - Update MQ_SEND_Date
+2024-03-15 07:53:47,961 INFO  [Thread-1] (VaultDBReader.java:544) - record updated
+2024-03-15 07:53:47,962 INFO  [Thread-1] (VaultDBReader.java:532) - Update MQ_SEND_Date
+2024-03-15 07:53:47,965 INFO  [Thread-1] (VaultDBReader.java:544) - record updated
+2024-03-15 07:53:47,965 INFO  [Thread-1] (VaultDBReader.java:274) - Time taken loadData -> 0.04125
+2024-03-15 07:53:47,971 INFO  [Thread-1] (VaultDBReader.java:464) - load data
+2024-03-15 07:53:47,972 INFO  [Thread-2] (  Writer.java:129) - Writer started writing dequeued data
+2024-03-15 07:53:47,976 INFO  [Thread-1] (VaultDBReader.java:97) - DBReader : Completed reading data from database and sent to writer thread to write
+2024-03-15 07:53:48,000 DEBUG [Thread-2] (MQWriter.java:85) - Setting MQEnvironment HostName : cosdatq1 Port : 1415 Channel : VAULT.COSDATQ1
+Establishing connection to MQManager FMEFQ2
+2024-03-15 07:53:48,119 DEBUG [Thread-2] (MQWriter.java:111) - QManager connect succesfully : FMEFQ2
+2024-03-15 07:53:48,125 DEBUG [Thread-2] (  Writer.java:137) - Writer : received count=0
+2024-03-15 07:53:48,126 DEBUG [Thread-2] (  Writer.java:147) - Writer : Dequeued record = DATA        20240315075345P006AVAULT000002359        TRN                     V03                                                                      006TRANSIT                                                                                          2024-03-15-07.53.47.0000000006795583CQ43523854416PHYTFC1PH403153971901000000010000000003938103RBCU$2013121193520624              0714827          000000005000000001983-04-01PHYTFBEARER BOND                                                 35238544160000000828YRBC                    0714828          000000005000000001083-04-01PHYTFBEARER BOND                                                 35238544160000000828YRBC
+2024-03-15 07:53:48,134 DEBUG [Thread-2] (MQWriter.java:167) - Sending text Message : DATA        20240315075345P006AVAULT000002359        TRN                     V03                                                                      006TRANSIT                                                                                          2024-03-15-07.53.47.0000000006795583CQ43523854416PHYTFC1PH403153971901000000010000000003938103RBCU$2013121193520624              0714827          000000005000000001983-04-01PHYTFBEARER BOND                                                 35238544160000000828YRBC                    0714828          000000005000000001083-04-01PHYTFBEARER BOND                                                 35238544160000000828YRBC
+2024-03-15 07:53:48,135 INFO  [Thread-2] (MQWriter.java:144) - MQWRITER:MQ message START: DATA        20240315075345P006AVAULT000002359        TRN                     V03                                                                      006TRANSIT                                                                                          2024-03-15-07.53.47.0000000006795583CQ43523854416PHYTFC1PH403153971901000000010000000003938103RBCU$2013121193520624              0714827          000000005000000001983-04-01PHYTFBEARER BOND                                                 35238544160000000828YRBC                    0714828          000000005000000001083-04-01PHYTFBEARER BOND                                                 35238544160000000828YRBC                    :END MSG
+2024-03-15 07:53:48,291 DEBUG [Thread-2] (MQWriter.java:194) - Message sent to Queue : ADP.INTQ.CCOS001.C999.VAULT.REQUEST.IEECFHBA
+2024-03-15 07:53:48,292 DEBUG [Thread-2] (  Writer.java:110) - Writer : Waiting for record...
+2024-03-15 07:53:48,292 INFO  [Thread-2] (  Writer.java:117) - Received shutdown signal : takeCount=1
+2024-03-15 07:53:48,294 INFO  [Thread-2] (  Writer.java:189) - Writer Thread Completed task .
+SystemProcessorExecuter.java returned success code of 0
+going to sleep at Fri Mar 15 07:53:48 EDT 2024 for 60 seconds.
+going for next round at Fri Mar 15 07:54:48 EDT 2024
+
+ *********************** BatchApps END. ***********************
+Run Time: Fri Mar 15 07:54:48 EDT 2024
+calling java process
+2024-03-15 07:54:50,799 DEBUG [main] (ProcessFactory.java:122) - Creating object, className=com.brd.system.reader.VaultDBReader
+2024-03-15 07:54:50,814 DEBUG [main] (ProcessFactory.java:122) - Creating object, className=com.brd.system.writer.MQWriter
+2024-03-15 07:54:50,823 INFO  [main] (SystemProcessor.java:176) - Parser is not configured, may be not in use.
+2024-03-15 07:54:50,825 DEBUG [Thread-2] (  Writer.java:110) - Writer : Waiting for record...
+2024-03-15 07:54:53,230 INFO  [Thread-1] (VaultDBReader.java:234) - load data
+2024-03-15 07:54:53,232 INFO  [Thread-1] (VaultDBReader.java:274) - Time taken loadData -> 0.012083333
+2024-03-15 07:54:53,235 INFO  [Thread-1] (VaultDBReader.java:97) - DBReader : Completed reading data from database and sent to writer thread to write
+2024-03-15 07:54:53,235 INFO  [Thread-2] (  Writer.java:117) - Received shutdown signal : takeCount=0
+2024-03-15 07:54:53,236 INFO  [Thread-2] (  Writer.java:189) - Writer Thread Completed task .
+SystemProcessorExecuter.java returned success code of 0
+going to sleep at Fri Mar 15 07:54:53 EDT 2024 for 60 seconds.
